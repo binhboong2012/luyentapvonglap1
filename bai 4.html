@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  var a = 0, b = 1, temp = 0, c = 0;
+  while (true) {
+      temp = a + b;
+      a = b ;
+      b = temp;
+      if (temp % 5 == 0) {
+          c++;
+      }
+      if (c == 3) {
+          document.write('Số thu ' + c + ' của fibonacci chia hết cho 5 là: ' + temp);
+          break;
+      }
+  }
+</script>
+</body>
+</html>

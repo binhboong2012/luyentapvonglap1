@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let couter = 0;
+    let sum = 0;
+    let i = 7;
+    while (true) {
+        if (i % 7 ==0) {
+            couter++;
+            sum = sum + i;
+            // document.write('<br>' + i + ' - ' + sum)
+        }
+        i = i + 7;
+        if (couter == 30){
+            break;
+        }
+    }
+    document.write(sum);
+</script>
+</body>
+</html>
